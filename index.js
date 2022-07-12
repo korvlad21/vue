@@ -67,3 +67,13 @@ var app7 = new Vue({
     }
 })
 
+var obj = {
+    foo: 'bar'
+}
+
+Object.freeze(obj)
+new Vue({
+    el: '#app8',
+    data: obj
+})
+
